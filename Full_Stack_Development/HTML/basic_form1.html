@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>A personal details form</h1>
+    <br>
+    <form action="#">
+        <label for="salutation">Salutation: </label>
+        <select name="salutation" id="salutation">
+            <option value="m">Mr.</option>
+            <option value="f">Mrs.</option>
+            <option value="u" selected>Miss</option>
+        </select>
+        <p></p>
+        <label for="fname">First Name: </label>
+        <input type="text" name="fname" id="fname">
+        <p></p>
+        <label for="lname">Last Name: </label>
+        <input type="text" name="lname" id="lname">
+        <p></p>
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" id="m">Male
+        <input type="radio" name="gender" id="f">Female
+        <p></p>
+        <label for="mail">Email:</label>
+        <input type="email" name="mail" id="mail">
+        <p></p>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" name="dob" id="dob">
+        <p></p>
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age">
+        <p></p>
+        <label for="pax">Pax:</label>
+        <input type="number" name="pax" id="pax" min="1" max="2">
+        <p></p>
+        <label for="address">Address:</label><br>
+        <textarea name="address" id="address" cols="25" rows="5"></textarea>
+        <p></p>
+        <label for="photo">Upload your Photo:</label>
+        <input type="file" name="photo" id="photo">
+        <p></p>
+        <input type="reset" name="reset" id="reset">
+        <input type="submit" name="submit" id="submit">
+    </form>
+</body>
+</html>
