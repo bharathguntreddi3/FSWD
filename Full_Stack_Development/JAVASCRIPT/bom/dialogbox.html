@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p></p>
+    <button onclick="showDate()">Get Date</button><p></p>
+    <button onclick="takeConfirmation()">Take Confirmation</button><p></p>
+    <button onclick="takeName()">Take Name</button>
+
+    <script>
+        function showDate() {
+            alert(new Date());
+        }
+
+        function takeConfirmation() {
+            var result = confirm("Do you want to go?");
+            if(result){
+                alert("Yes")
+            }
+            else{
+                alert("No")
+            }
+        }
+
+        function takeName() {
+            var name = prompt("enter your name");
+            if(name!=null &&name!=""){
+                alert("Hello" + name);
+            }
+        }
+    </script>
+</body>
+</html>
