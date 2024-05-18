@@ -1,2 +1,23 @@
-// display the digital clock h, m,s in the console
-// it should display a running clock in the console
+<!-- // display the digital clock h, m,s in the console
+// it should display a running clock in the console -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id = 'clock'></h2>
+
+    <script>
+        setInterval(showTime, 1000);
+        var clock = document.getElementById("clock");
+        function showTime() {
+            var ct = new Date();
+            clock.innerHTML = ct.toTimeString().substring();
+        }
+    </script>
+</body>
+</html>

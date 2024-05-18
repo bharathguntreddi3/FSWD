@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <h2>Greetings</h2>
+    What's your name: <input type="text" name="" id="textName">
+    <br>
+    <button onclick="greet()">Greet</button>
+    <br>
+    <h1 id="message"></h1>
+    <h2></h2>
+
+    <script>
+        function greet(){
+            $("#message").text("Hello " + $("#textName").value())
+            $("h2").text("Hello " + $("#textName").value())
+        }
+    </script>
+</body>
+</html>
