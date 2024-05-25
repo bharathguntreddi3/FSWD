@@ -1,9 +1,12 @@
+require('dotenv').config();
+
 var mysql = require('mysql');
 
 var con = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'Hayan12!@',
+    password: process.env.DB_PASSWORD, // your password
+    // password is encrypted and stored in .env file
     database: 'apr30'
 });
 

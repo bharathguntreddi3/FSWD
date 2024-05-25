@@ -1,10 +1,12 @@
+require('dotenv').config();
+
 var mysql2 = require('mysql2/promise');
 
 async function list_employees() {
   const con = await mysql2.createConnection({
     host: "localhost",
     user: "root",
-    password: "Hayan12!@",
+    password: process.env.DB_PASSWORD,
     database: "apr30"
   });
 
