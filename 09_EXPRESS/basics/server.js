@@ -11,6 +11,11 @@ app.get('/now', (req, res) => {
   res.send(`<h1>${now}</h1>`)
 })
 
+app.get('/wish', (req, res) => {
+  let name = req.query.name ?? 'Guest'
+  res.send(`<h1>Hello, ${name}</h1>`)
+})
+
 app.listen(port, () => {
   console.log(`Express Application listening on port ${port}`)
 })  
