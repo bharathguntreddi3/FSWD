@@ -17,7 +17,7 @@ app.set('view engine', 'ejs');
 app.get('/', (req, res) => {
   let now = new Date()
   let nowHour = now.getHours() 
-  res.render("greet", {greet: nowHour})
+  res.render("greet", {nowHour: nowHour})
   // res.send(`hello ${nowHour}`)
 })
 
@@ -50,4 +50,4 @@ app.get('/coursestable', (req, res) => {
 
 app.listen(port, () => {
   console.log(`Express Application listening on port ${port}`)
-})  
+})
