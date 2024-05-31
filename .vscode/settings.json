@@ -3,6 +3,7 @@
         "coursestable",
         "curdatetime",
         "dskill",
+        "lastaccess",
         "listcourses",
         "mathop",
         "nums"
