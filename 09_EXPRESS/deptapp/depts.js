@@ -89,7 +89,7 @@ app.post('/add', async (req, res) => {
 
 app.get('/edit', async (req, res) => {
     res.send("To be implemented")
-})
+})   
 
 app.post('/edit', async (req, res) => {
     res.send("To be implemented")
