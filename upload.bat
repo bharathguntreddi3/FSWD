@@ -4,6 +4,8 @@ IF "%~1"=="" (
     exit /b 1
 )
 
+git status
+
 git add .
 
 git commit -m "%~1"

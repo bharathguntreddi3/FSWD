@@ -1,13 +1,34 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Hello from './basics/Hello';
-import Greet from './basics/Greet';
+// import Hello from './basics/Hello';
+// import Greet from './basics/Greet';
+// import GreetCC from './basics/GreetCC';
+// import Course from './props/Course';
+// import CourseList from './props/CourseList';
+// import CourseList2 from './props/CourseList2';
+// import Customer from './props/Customer';
+import ProductsList from './props/ProductsList';
+
+// let courses = [
+//   { title: "Power BI", fee: 10000 },
+//   { title: "Python", fee: 7500 },
+//   { title: "Data Science", fee: 20000 }
+// ]
+
+let products = [
+  { id: 101, name: "Laptop", price: 45000 },
+  { id: 102, name: "Mobile", price: 25000 },
+  { id: 103, name: "Tablet", price: 15000 }
+]
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Hello />
-    <Greet />
+    {/* <Course title="Power BI" fee = "10000"/> */}
+    {/* <CourseList courses={courses}/> */}
+    {/* <CourseList courses={courses} trainer="Bharath"/> */}
+    {/* <Customer name="larry page" email="larry@google.com" age={40}/> */}
+    <ProductsList products = {products}/>
   </React.StrictMode>
 );
 
