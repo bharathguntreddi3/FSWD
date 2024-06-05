@@ -7,7 +7,10 @@ import ReactDOM from 'react-dom/client';
 // import CourseList from './props/CourseList';
 // import CourseList2 from './props/CourseList2';
 // import Customer from './props/Customer';
-import ProductsList from './props/ProductsList';
+// import ProductsList from './props/ProductsList';
+// import CourseCC from './props/CourseCC';
+// import Counter from './state/Counter';
+import Passengers from './state/Passengers';
 
 // let courses = [
 //   { title: "Power BI", fee: 10000 },
@@ -15,11 +18,11 @@ import ProductsList from './props/ProductsList';
 //   { title: "Data Science", fee: 20000 }
 // ]
 
-let products = [
-  { id: 101, name: "Laptop", price: 45000 },
-  { id: 102, name: "Mobile", price: 25000 },
-  { id: 103, name: "Tablet", price: 15000 }
-]
+// let products = [
+//   { id: 101, name: "Laptop", price: 45000 },
+//   { id: 102, name: "Mobile", price: 25000 },
+//   { id: 103, name: "Tablet", price: 15000 }
+// ]
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -28,7 +31,10 @@ root.render(
     {/* <CourseList courses={courses}/> */}
     {/* <CourseList courses={courses} trainer="Bharath"/> */}
     {/* <Customer name="larry page" email="larry@google.com" age={40}/> */}
-    <ProductsList products = {products}/>
+    {/* <ProductsList products = {products}/> */}
+    {/* <CourseCC title="power BI" fee={100}/> */}
+    {/* <Counter/> */}
+    <Passengers/>
   </React.StrictMode>
 );
 
