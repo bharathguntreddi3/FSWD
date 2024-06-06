@@ -10,7 +10,8 @@ import ReactDOM from 'react-dom/client';
 // import ProductsList from './props/ProductsList';
 // import CourseCC from './props/CourseCC';
 // import Counter from './state/Counter';
-import Passengers from './state/Passengers';
+// import Passengers from './state/Passengers';
+import PassengersList from './state/PassengersList';
 
 // let courses = [
 //   { title: "Power BI", fee: 10000 },
@@ -34,7 +35,7 @@ root.render(
     {/* <ProductsList products = {products}/> */}
     {/* <CourseCC title="power BI" fee={100}/> */}
     {/* <Counter/> */}
-    <Passengers/>
+    <PassengersList/>
   </React.StrictMode>
 );
 
