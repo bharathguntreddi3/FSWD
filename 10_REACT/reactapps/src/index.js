@@ -12,7 +12,10 @@ import ReactDOM from 'react-dom/client';
 // import Counter from './state/Counter';
 // import Passengers from './state/Passengers';
 // import PassengersList from './state/PassengersList';
-import CounterCC from './state/CounterCC';
+// import CounterCC from './state/CounterCC';
+import Cart from './state/Cart';
+
+
 // let courses = [
 //   { title: "Power BI", fee: 10000 },
 //   { title: "Python", fee: 7500 },
@@ -36,7 +39,8 @@ root.render(
     {/* <CourseCC title="power BI" fee={100}/> */}
     {/* <Counter/> */}
     {/* <PassengersList/> */}
-    <CounterCC />
+    {/* <CounterCC /> */}
+    <Cart />
   </React.StrictMode>
 );
 
