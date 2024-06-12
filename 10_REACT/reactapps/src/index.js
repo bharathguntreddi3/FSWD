@@ -13,7 +13,8 @@ import ReactDOM from 'react-dom/client';
 // import Passengers from './state/Passengers';
 // import PassengersList from './state/PassengersList';
 // import CounterCC from './state/CounterCC';
-import Cart from './state/Cart';
+// import Cart from './state/Cart';
+import GitUserInfo from './ajax/GetUserInfo';
 
 
 // let courses = [
@@ -40,7 +41,8 @@ root.render(
     {/* <Counter/> */}
     {/* <PassengersList/> */}
     {/* <CounterCC /> */}
-    <Cart />
+    {/* <Cart /> */}
+    <GitUserInfo />
   </React.StrictMode>
 );
 
