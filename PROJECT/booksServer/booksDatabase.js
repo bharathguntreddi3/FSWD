@@ -1,11 +1,12 @@
 var mysql = require('mysql2/promise');
+require('dotenv').config();
 
 var pool = mysql.createPool({
     connectionLimit: 4,
-    host: "localhost",
-    user: "root",
-    password: "Hayan12!@",
-    database: "apr30"
+    host: process.env.DB_HOST,
+    user: process.env.db_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME
 });
 
 async function getBooks() {

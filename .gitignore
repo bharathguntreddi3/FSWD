@@ -4,6 +4,8 @@ fswd.pdf
 
 .env
 
+node_modules/
+
 tempCodeRunnerFile.javascript
 
 # Logs
